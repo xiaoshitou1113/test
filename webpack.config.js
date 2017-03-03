@@ -8,7 +8,7 @@ module.exports = {
         loaders: [
             {test: /\.css$/, loader: 'style-loader!css-loader'},
             {test: /\.js$/, loader: 'react-hot!babel',exclude:/node_modules/},
-            {test: /\.less$/, loader: 'style!css!less'},
+            {test: /\.less$/, loader: 'style-loader!css-loader!less-loader'},
             {test: /\.(jsx|es6)$/,loader: "babel-loader"}
         ]
     },
